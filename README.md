@@ -1,4 +1,6 @@
-## Adina Hotel and Restaurant
+# Adina Hotel and Restaurant
+
+## Website  https://adina-hotel-restaurant.netlify.app/
 
 This is a README file for a React-based Adina Hotel and Restaurant website. It includes information about the project, how to set it up, and how to use it.
 
