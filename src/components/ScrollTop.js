@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MdDoubleArrow } from "react-icons/md";
+import { MdKeyboardArrowUp } from "react-icons/md";
 
 const ScrollTop = () => {
   const [scrollPosition, setPosition] = useState(0);
@@ -29,8 +29,8 @@ const ScrollTop = () => {
       }`}
       onClick={scrollHandler}
     >
-      <span className="text-xl lg:text-2xl text-white -rotate-90">
-        <MdDoubleArrow />
+      <span className="text-xl lg:text-2xl text-white ">
+        <MdKeyboardArrowUp />
       </span>
     </div>
   );

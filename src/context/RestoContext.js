@@ -10,7 +10,7 @@ export const RestoContex = createContext({
 });
 
 const initalValue = {
-  numberOfPeople: "Number of People",
+  numberOfPeople: "No. Of People",
   meals: "Meals Type",
   cuisine: "Cuisine",
   restoData: RestoData,
@@ -26,6 +26,16 @@ const reducer = (prevState, action) => {
     return { ...prevState, cuisine: action.value };
   } else if (action.type === "FILTER") {
     action.value.preventDefault();
+
+    console.log(prevState.numberOfPeople, prevState.cuisine);
+    if (prevState.numberOfPeople === "No. Of People") {
+      return prevState;
+    }
+
+    if (prevState.cuisine === "Cuisine") {
+      return prevState;
+    }
+
     prevState.isLoading = true;
 
     const filterArr = initalValue.restoData.filter((data) => {
@@ -34,8 +44,11 @@ const reducer = (prevState, action) => {
       } else {
         return (
           +data.maxPerson >= +prevState.numberOfPeople.slice(0, 1) &&
-          data.cuisine.toLowerCase().indexOf(prevState.cuisine.toLowerCase()) >=
-            0
+          (data.timings.toLowerCase().indexOf(prevState.meals.toLowerCase()) >=
+            0 ||
+            data.cuisine
+              .toLowerCase()
+              .indexOf(prevState.cuisine.toLowerCase()) >= 0)
         );
       }
     });

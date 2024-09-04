@@ -125,12 +125,30 @@ const BookForm = ({ isHome, isResto, dispatch }) => {
               text={ctx.state?.cuisine}
             />
           </div>
+
           <button
             type="submit"
             className="btn btn-primary"
             onClick={(e) => dispatch({ type: "FILTER", value: e })}
           >
             Check Availability
+          </button>
+          <button
+            type="button"
+            style={{ backgroundColor: "#000" }}
+            className="btn-reset btn-secondary"
+            onClick={(e) =>
+              dispatch({
+                type: "RESET",
+                value: {
+                  people: "Number Of People",
+                  meal: "Meals",
+                  cuisine: "Cuisine",
+                },
+              })
+            }
+          >
+            Reset
           </button>
         </div>
       )}

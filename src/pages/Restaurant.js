@@ -24,7 +24,7 @@ const Restaurant = ({ length, isHome }) => {
   useEffect(() => {
     ctx.dispatch({
       type: "RESET",
-      value: { people: "Number Of People", meal: "Meals", cuisine: "Cuisine" },
+      value: { people: "No. Of People", meal: "Meals", cuisine: "Cuisine" },
     });
     /* eslint-disable */
   }, [location]);
@@ -111,13 +111,24 @@ const Restaurant = ({ length, isHome }) => {
           </div>
         )}
         <div className="grid grid-cols-1 px-4 max-w-sm mx-auto gap-[30px] lg:grid-cols-3 lg:max-w-none lg:mx-0 my-16">
-          {newResodata.map((resto) => (
-            <RestoCard
-              key={resto.id}
-              resto={resto}
-              clickHandler={clickHandler}
-            />
-          ))}
+          {newResodata.length > 0 ? (
+            newResodata.map((resto) => (
+              <RestoCard
+                key={resto.id}
+                resto={resto}
+                clickHandler={clickHandler}
+              />
+            ))
+          ) : (
+            <div className="flex flex-col items-center">
+              <h2 className="font-secondary text-[28px]  mb-1">
+                No Tables Available
+              </h2>
+              <p className="text-[16px]">
+                Try with different filters Or check No. of People
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </>

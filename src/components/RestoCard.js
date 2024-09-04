@@ -39,7 +39,7 @@ const RestoCard = ({ resto, clickHandler }) => {
               <MdOutlineAvTimer className="text-[17px]" />
             </div>
             <div className="flex gap-x-1">
-              <div className="">D{resto.timings}</div>
+              <div className="">{resto.timings}</div>
               {/* <div>{size}m2</div> */}
             </div>
           </div>
