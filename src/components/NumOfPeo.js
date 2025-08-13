@@ -29,7 +29,10 @@ const NumOfPeo = ({ lists, text, dispatch, type, isModal }) => {
       >
         {lists.map((item, index) => (
           <Menu.Item
-            onClick={() => dispatch({ type, value: item.name })}
+            onClick={() => {
+              if (text === "Time") return;
+              dispatch({ type, value: item.name });
+            }}
             as="li"
             key={index}
             className="border-b py-3 last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex justify-center items-center cursor-pointer"

@@ -46,7 +46,7 @@ const FormModal = ({
       )}
       {isOpen && (
         <div className=" w-full overflow-y-auto">
-          <div className="w-[90%] lg:w-[35%] z-[70] top-[2%] lg:top-[5%] left-[50%] fixed -translate-x-[50%]  bg-white pt-2 flex flex-col items-center justify-center">
+          <div className="w-[90%] lg:w-[35%] z-[70] top-[2%] lg:top-[1%] left-[50%] fixed -translate-x-[50%]  bg-white pt-2 flex flex-col items-center justify-center">
             <h3
               className="text-xl font-bold absolute top-3 right-5 cursor-pointer hover:text-accent"
               onClick={() => closeHandler()}

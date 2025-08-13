@@ -81,7 +81,7 @@ const RestoModal = ({ clickHandler, isOpen }) => {
                   type="text"
                   name="name"
                   id="name"
-                  className="px-3 py-4 bg-[#2d2d2d] outline-none border-none placeholder:text-[#777] mt-1 lg:mb-3"
+                  className="px-3 py-4 bg-[#2d2d2d] outline-none border-none placeholder:text-[#777] mt-1 lg:mb-3 text-white"
                   ref={nameRef}
                   required
                   placeholder="Enter Your Name"
@@ -91,7 +91,7 @@ const RestoModal = ({ clickHandler, isOpen }) => {
                     type="email"
                     name="email"
                     id="email"
-                    className="px-3 py-4 bg-[#2d2d2d] outline-none border-none placeholder:text-[#777] w-[50%] mt-1 lg:mb-3"
+                    className="px-3 py-4 bg-[#2d2d2d] outline-none border-none placeholder:text-[#777] w-[50%] mt-1 lg:mb-3 text-white"
                     ref={emailRef}
                     required
                     placeholder="Enter Your Email Address"
@@ -100,7 +100,7 @@ const RestoModal = ({ clickHandler, isOpen }) => {
                     type="tel"
                     name="phone"
                     id="phone"
-                    className="px-3 py-4 bg-[#2d2d2d] outline-none border-none placeholder:text-[#777] w-[50%] mt-1 lg:mb-3"
+                    className="px-3 py-4 bg-[#2d2d2d] outline-none border-none placeholder:text-[#777] w-[50%] mt-1 lg:mb-3 text-white"
                     required
                     placeholder="Enter Phone Number"
                   />
@@ -110,7 +110,7 @@ const RestoModal = ({ clickHandler, isOpen }) => {
                     type="date"
                     name="date"
                     id="date"
-                    className="px-3 py-4 bg-[#2d2d2d] outline-none border-none text-[#777] font-[500] placeholder:text-[#777] w-[50%] mt-1 mb-3"
+                    className="px-3 py-4 bg-[#2d2d2d] text-white outline-none border-none  font-[500] placeholder:text-[#777] w-[50%] mt-1 mb-3"
                     required
                     placeholder="Enter Full Address"
                   />

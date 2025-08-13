@@ -58,7 +58,7 @@ const Restaurant = ({ length, isHome }) => {
       {!isHome && (
         <PageHeader
           img={img}
-          pera="Food That Tuch Your Sole"
+          pera="Food That Touch Your Sole"
           heading="Restaurant"
         />
       )}
@@ -120,7 +120,7 @@ const Restaurant = ({ length, isHome }) => {
               />
             ))
           ) : (
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center justify-center col-span-3">
               <h2 className="font-secondary text-[28px]  mb-1">
                 No Tables Available
               </h2>

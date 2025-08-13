@@ -24,12 +24,12 @@ const ScrollTop = () => {
   return (
     <div
       title="Go to Top"
-      className={`lg:w-12 lg:h-12 w-8 h-8 rounded-full bg-accent hover:bg-accent-hover fixed right-2 bottom-16 lg:right-10  flex items-center justify-center cursor-pointer ${
+      className={`lg:w-12 lg:h-12 w-8 h-8 rounded-full bg-white border border-accent shadow-lg hover:bg-accent group fixed right-2 bottom-16 lg:right-10  flex items-center justify-center cursor-pointer ${
         scrollPosition <= 450 ? "hidden" : ""
       }`}
       onClick={scrollHandler}
     >
-      <span className="text-xl lg:text-2xl text-white ">
+      <span className="text-xl lg:text-2xl text-accent group-hover:text-white">
         <MdKeyboardArrowUp />
       </span>
     </div>

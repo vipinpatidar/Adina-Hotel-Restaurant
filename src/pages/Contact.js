@@ -75,7 +75,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row h-full pb-24">
           {/* left */}
           <div className="w-full h-full px-2 lg:px-6 lg:w-[40%]">
-            <div className="py-8 px-3 lg:px-5 bg-accent/30 mb-6">
+            <div className="py-8 px-3 lg:px-5 bg-accent/20 mb-6">
               <div className="flex flex-col space-y-4 mb-4">
                 <h3 className="h3">Contact Us</h3>
                 <form className="flex flex-col mb-4" onSubmit={submitHandler}>
@@ -120,7 +120,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-accent/30 px-3 lg:px-5 pt-4 pb-2">
+            <div className="bg-accent/20 px-3 lg:px-5 pt-4 pb-2">
               <h3 className="h3">Address</h3>
               <address>ADINA Hotel</address>
               <address>
@@ -155,7 +155,7 @@ const Contact = () => {
                         }`}
                         onClick={() => clickHandler(fAndQ.id)}
                       >
-                        <h4 className="text-[1.1rem] lg:text-xl font-[500] text-gray-700">
+                        <h4 className="text-[1.05rem] lg:text-[1.15rem] font-[500] text-gray-700">
                           {fAndQ.question}
                         </h4>
                         {fAndQ.isOpen ? (
@@ -165,7 +165,7 @@ const Contact = () => {
                         )}
                       </div>
                       {fAndQ.isOpen && (
-                        <div className="p-3 border-b border-accent bg-accent/20">
+                        <div className="p-4 border-b border-accent bg-accent/20">
                           <p>{fAndQ.answer}</p>
                         </div>
                       )}
